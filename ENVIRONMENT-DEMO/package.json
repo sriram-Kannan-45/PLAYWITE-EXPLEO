@@ -1,22 +1,19 @@
 {
   "name": "playwite-expleo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "test:qa": "cross-env ENV=qa  playwright test",
-    "test:uat": "cross-env ENV=uat  playwright test",
+    "test:qa": "cross-env ENV=qa playwright test",
+    "test:uat": "cross-env ENV=uat playwright test",
     "test:prod": "cross-env ENV=prod playwright test"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.61.1",
-    "@types/node": "^26.0.0",
-    "allure-playwright": "^3.10.1",
-    "cross-env": "^10.1.0"
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "ts-node": "^10.9.2",
+    "cross-env": "^10.1.0",
+    "allure-playwright": "^3.10.1"
   },
   "dependencies": {
     "dotenv": "^17.4.2"

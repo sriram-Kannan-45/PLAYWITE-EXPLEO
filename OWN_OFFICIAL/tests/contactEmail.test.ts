@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'
+import { expect, test } from '@playwright/test'
 
 test ('emailContact', async ({page}) =>
 {
@@ -16,5 +16,5 @@ test ('emailContact', async ({page}) =>
 
     await page.locator('button[type="submit"]').click()
 
-    await expect(page.locator('[role="status"]')).toBeVisible({ timeout: 10000 })
+    await expect(page.locator('[role="status"]')).toBeVisible({visible:true})
 })
