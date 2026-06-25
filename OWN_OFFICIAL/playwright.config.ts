@@ -1,11 +1,4 @@
 import { defineConfig } from '@playwright/test';
-import dotenv from 'dotenv';
-
-const envName = process.env.ENV || 'qa';
-
-dotenv.config({
-  path: `./env/.env.${envName}`
-});
 
 export default defineConfig({
   testDir: './tests',
@@ -18,18 +11,17 @@ export default defineConfig({
 
   workers: process.env.CI ? 1 : undefined,
 
-   reporter: [
+  reporter: [
     ['html', { outputFolder: 'playwright-report', open: 'never' }],
-    ['allure-playwright']
+    ['allure-playwright'],
+    ['junit', { outputFile: 'test-results/results.xml' }]
   ],
 
   use: {
+    browserName: 'chromium',
     headless: false,
     screenshot: 'only-on-failure',
-    trace: 'r',
-    video: 'retain-on-failure',
-    browserName : 'chromium'
-  },
-
-  
+    trace: 'on',
+    video: 'retain-on-failure'
+  }
 });
