@@ -1,4 +1,4 @@
-import { test,chromium,expect,Page,Browser } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 test("Testcase 2 - Login using valid credentials ",async({page})=>{
    
@@ -6,8 +6,8 @@ test("Testcase 2 - Login using valid credentials ",async({page})=>{
 
     await page.click("//a[normalize-space()='Signup / Login']");
 
-    await page.fill("//input[@data-qa='login-email']","bvetrivel@gmail.com1000")
-    await page.fill("//input[@placeholder='Password']","Vetri@12345")
+    await page.fill("//input[@data-qa='login-email']","titooram123@gmail.com")
+    await page.fill("//input[@placeholder='Password']","sriram123@")
 
     await page.click("//button[normalize-space()='Login']")
 

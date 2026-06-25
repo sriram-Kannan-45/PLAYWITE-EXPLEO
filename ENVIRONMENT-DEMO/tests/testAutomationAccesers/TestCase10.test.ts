@@ -1,4 +1,4 @@
-import { test,expect } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 test("Testcase 10 - Verify Subscription in home page",async({page})=>{
    
@@ -8,7 +8,7 @@ test("Testcase 10 - Verify Subscription in home page",async({page})=>{
     await page.locator("//h2[text() = 'Subscription']").scrollIntoViewIfNeeded()
     await expect(page.locator("//h2[text() = 'Subscription']")).toBeVisible()
     
-    await page.fill("//input[@id = 'susbscribe_email']", 'vignesh@gmail.com')
+    await page.fill("//input[@id = 'susbscribe_email']", 'titooram123@gmail.com')
     await page.click("//button[@id = 'subscribe']")
     await expect(page.getByText("You have been successfully subscribed!")).toBeVisible()
 })

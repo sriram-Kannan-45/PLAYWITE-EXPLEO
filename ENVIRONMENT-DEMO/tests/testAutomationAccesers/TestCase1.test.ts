@@ -1,4 +1,4 @@
-import { test,expect } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 test("Testcase 1 - Register User",async({page})=>{
    
@@ -7,15 +7,15 @@ test("Testcase 1 - Register User",async({page})=>{
 
     await page.click("//a[normalize-space()='Signup / Login']");
 
-    await page.fill("//input[@placeholder='Name']","Vignesh")
-    await page.fill("//input[@data-qa='signup-email']","vignesh@gmail.com")
+    await page.fill("//input[@placeholder='Name']","sriram")
+    await page.fill("//input[@data-qa='signup-email']","srti@gmail.com")
 
     await page.click("//button[normalize-space()='Signup']")
 
     await page.fill("//input[@id='password']","1234")
 
-    await page.fill("//input[@id='first_name']","Vigneshwaran")
-    await page.fill("//input[@id='last_name']","M")
+    await page.fill("//input[@id='first_name']","sriram")
+    await page.fill("//input[@id='last_name']","K")
 
     await page.fill("//input[@id='state']","TamilNadu")
     await page.fill("//input[@id='city']","salem")

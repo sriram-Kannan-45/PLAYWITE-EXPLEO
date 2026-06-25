@@ -1,4 +1,4 @@
-import { test,expect, Dialog } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 
 test("Testcase 6 - Contact Us Form",async({page})=>{
 
@@ -9,9 +9,9 @@ test("Testcase 6 - Contact Us Form",async({page})=>{
 
     await expect(page.locator("//h2[text() = 'Get In Touch']")).toBeVisible()
 
-    await page.fill("//input[@name = 'name']", "Vigneshwaran");
-    await page.fill("//input[@name = 'email']", "Vigneshwaran@gmail.com");
-    await page.fill("//input[@name = 'subject']", "Sample Mail");
+    await page.fill("//input[@name = 'name']", "sriram");
+    await page.fill("//input[@name = 'email']", "titooram123@gmail.com");
+    await page.fill("//input[@name = 'subject']", "ss");
     await page.fill("//textarea[@id = 'message']", "Hi");
     
 
