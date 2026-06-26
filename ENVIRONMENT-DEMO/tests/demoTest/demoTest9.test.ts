@@ -1,6 +1,6 @@
-import { expect, test } from "@playwright/test";
+import { test } from "@playwright/test";
 
-test('Handle new Window', async ({ page, context }) => {
+test('iterate new Window', async ({ page, context }) => {
 
     await page.goto("https://demoqa.com/browser-windows");
 
@@ -19,11 +19,21 @@ test('Handle new Window', async ({ page, context }) => {
     await newWindow.waitForLoadState();
 
     
-    const text = await newWindow.locator("#sampleHeading").textContent();
+    const pages = context.pages();
 
-    console.log(text);
+    console.log(pages.length);
 
-    expect(text).toBe('This is a sample page')
+    for (const p of pages)
+    {
+        if (await p.title() === 'demosite' )
+        {
+            console.log("parent")
+        }
 
-    
+        else{
+
+            console.log('child')
+        }
+    }
+
 })
