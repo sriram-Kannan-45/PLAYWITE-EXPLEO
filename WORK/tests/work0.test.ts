@@ -1,6 +1,6 @@
 // DESCRIPE 
 
-import { test } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 
 test.describe('LOGIN' , ()=>{
 
@@ -21,6 +21,8 @@ test.describe('LOGIN' , ()=>{
 
     await page.locator('//button[text()="Log in"]').click()
 
+    await expect.soft(page.locator('//a[text()="Log out"]')).toHaveText('Log out');
+
     
 })
 
@@ -40,6 +42,7 @@ test ('invalid' , async({page})=>
 
     await page.locator('//button[text()="Log in"]').click()
 
+    
 
 
 })

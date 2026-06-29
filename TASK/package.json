@@ -1,10 +1,10 @@
 {
-  "name": "work",
+  "name": "task",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx playwright test parametes.test.ts  || playwright test --last-failed"
+    "test": "playwright test"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.61.1",
-    "@types/node": "^26.0.1"
+    "@types/node": "^26.0.1",
+    "allure-playwright": "^3.10.2"
   }
 }

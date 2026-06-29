@@ -1,0 +1,8 @@
+Title : validLogin
+Status : passed
+Expected : passed
+Duration : 11508
+Retry : 0
+Worker : 1
+File : D:\PLAYWITE-EXPLEO\TASK\tests\Hooks.test.ts
+Timeout : 60000
