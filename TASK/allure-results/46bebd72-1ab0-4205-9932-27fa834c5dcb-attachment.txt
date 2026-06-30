@@ -1,0 +1,7 @@
+{
+  testName: 'Black UserName',
+  username: '',
+  password: 'admin',
+  expectedResult: 'Failure',
+  expectedMessage: 'Please fill out Username and Password.'
+}

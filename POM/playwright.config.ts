@@ -18,13 +18,24 @@ export default defineConfig({
   ],
 
   use: {
-    headless: false,
-    trace: 'on-first-retry',
-    screenshot: 'on',
-    video: 'retain-on-failure',
-    actionTimeout : 10 * 1000,
-    navigationTimeout : 10 * 1000
+  browserName: 'chromium',
+  headless: false,
+
+  viewport: {
+    width: 1920,
+    height: 1200,
   },
+
+  actionTimeout: 10 * 1000,
+  navigationTimeout: 10 * 1000,
+
+  screenshot: 'only-on-failure',
+  video: 'retain-on-failure',
+  trace: 'on-first-retry',
+
+  ignoreHTTPSErrors: true,
+  acceptDownloads: true,
+},
 
   // projects: [
   //   {

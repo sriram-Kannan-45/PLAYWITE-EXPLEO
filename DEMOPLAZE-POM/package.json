@@ -1,18 +1,18 @@
 {
-  "name": "task",
+  "name": "demoplaze-pom",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "playwright test jsonPara.test.ts"
-  },
+  "scripts": {},
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.61.1",
-    "@types/node": "^26.0.1",
-    "allure-playwright": "^3.10.2"
+    "@types/node": "^26.0.1"
+  },
+  "dependencies": {
+    "csv-parse": "^7.0.0"
   }
 }

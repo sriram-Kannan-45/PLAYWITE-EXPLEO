@@ -1,0 +1,7 @@
+{
+  testName: 'Invalid Login',
+  username: 'admin',
+  password: 'admin123',
+  expectedResult: 'Failure',
+  expectedMessage: 'Welcome'
+}

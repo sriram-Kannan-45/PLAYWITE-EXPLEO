@@ -21,7 +21,7 @@ test("keyboard action @key", async ({ page }) => {
 
     await page.keyboard.press("Control+A");
     await page.keyboard.press("Backspace");
-    await page.keyboard.type("Chennai");
+    await page.keyboard.type("bengalore");
 
     await submit.click();
 
