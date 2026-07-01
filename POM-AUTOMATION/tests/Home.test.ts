@@ -1,26 +1,54 @@
-
 import { expect, test } from '../fixture/fixtures';
+import { readLoginData } from '../utils/residerCsv';
 
-test.describe('home' , ()=>
-{
-    test.beforeEach('url',async({page})=>
-    {
-        await page.goto('https://automationexercise.com/')
-    })
+const users = readLoginData();
 
-    test('register' , async({homepage , loginpage , registerpage , productpage , cartpage})=>{
+test.describe('Register Tests', () => {
 
-        await homepage.clickSignUp()
+    test.beforeEach(async ({ page }) => {
+        console.log("URL: ", process.env.URL);
+        await page.goto('');
+    });
 
-        await loginpage.regStep1("sriram" , "sfsdadhhdfajsfajjjkhkzjfhcajgnkjs@gmail.com")
+    test.afterEach(async ({ page }) => {
+         await page.close();
+    });
 
-        await registerpage.register("sriram123@", "sriram","kannan","abc","tamilnadu","salem","434","354323")
+    for (const user of users) {
 
-        // await expect(registerpage.delete).toBeVisible()
+        test(`${user.type} Register Test`, async ({
+            homepage,
+            loginpage,
+            registerpage,
+            productpage,
+            cartpage
+        }) => {
 
-        await productpage.addTocartItem()
+            await homepage.clickSignUp();
 
-        await cartpage.placeOrder() 
-        await expect(cartpage.assertOrder).toBeVisible()
-    })
-})
+            await loginpage.regStep1(
+                user.username,
+                user.email
+            );
+
+            await registerpage.register(
+                user.password,
+                user.first_name,
+                user.last_name,
+                user.address,
+                user.state,
+                user.city,
+                user.zipcode,
+                user.mobileNumber
+            );
+
+            await productpage.addTocartItem();
+
+            await cartpage.placeOrder();
+
+            await expect(cartpage.assertOrder).toBeVisible();
+        });
+
+    }
+
+});

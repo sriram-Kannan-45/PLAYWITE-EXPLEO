@@ -28,6 +28,7 @@ test('iterate new Window', async ({ page, context }) => {
         if (await p.title() === 'demosite' )
         {
             console.log("parent")
+            
         }
 
         else{

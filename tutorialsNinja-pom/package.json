@@ -1,12 +1,10 @@
 {
-  "name": "pom-automation",
+  "name": "tutorialsninja-pom",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:qa": "cross-env ENV=qa playwright test",
-    "test:uat": "cross-env ENV=uat playwright test",
-    "test:prod": "cross-env ENV=prod playwright test"
+    "test:qa": "cross-env ENV=qa playwright test search.test.ts"
   },
   "keywords": [],
   "author": "",

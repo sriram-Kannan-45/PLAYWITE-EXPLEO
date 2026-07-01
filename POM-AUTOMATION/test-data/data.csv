@@ -1,0 +1,2 @@
+type,username,email,password,first_name,last_name,address,state,city,zipcode,mobileNumber
+valid,sriram,sridsam12345@gmail.com,Sriram@123,Sriram,Kannan,12 Anna Nagar,Tamil Nadu,Salem,636001,9876543210
