@@ -1,0 +1,233 @@
+[
+  {
+    "description": "    Description: Verify that a user can log in with valid credentials ",
+    "elements": [
+      {
+        "description": "",
+        "id": "login-to-automation-exercise;valid-login",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Valid login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1310387199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the automation exercise home page",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3607683800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user clicks on the Signup or Login link",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 615224200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user enters the email as \"srirammm123@gmail.com\"",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 179995399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user enters the password as \"sriram123@\"",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37088200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1291737800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user should be logged in successfully",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 127981299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 95983799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login-to-automation-exercise;invalid-login",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Invalid login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1397096000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on the automation exercise home page",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2721101899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user clicks on the Signup or Login link",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 606216700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "user enters the email as \"sriramjhfawave12345@gmail.com\"",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 161476799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "user enters the password as \"1234567\"",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35930000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 585848600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user should see an invalid login error",
+            "match": {
+              "location": "src\\test\\steps\\login.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 116715400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 117727600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-to-automation-exercise",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login to Automation Exercise",
+    "tags": [],
+    "uri": "src\\test\\features\\login.feature"
+  }
+]

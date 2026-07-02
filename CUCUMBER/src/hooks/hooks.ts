@@ -62,5 +62,5 @@ After(async function ({ pickle, result }) {
     }
 
     await this.page.close();
-    await this.context.close();
+    // await this.context.close();
 });
