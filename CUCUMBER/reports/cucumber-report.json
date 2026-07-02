@@ -1,0 +1,446 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "register;validregister",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "validRegister",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2228137199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigate to the tutorialsninja website",
+            "match": {
+              "location": "src\\test\\steps\\tutorialNinjaRegister.ts:4"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5143028899,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\PLAYWITE-EXPLEO\\CUCUMBER\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "user click the register link",
+            "match": {
+              "location": "src\\test\\steps\\tutorialNinjaRegister.ts:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user enter the first name as \"Sriram\"",
+            "match": {
+              "location": "src\\test\\steps\\tutorialNinjaRegister.ts:18"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user enter the last name as \"Wave\"",
+            "match": {
+              "location": "src\\test\\steps\\tutorialNinjaRegister.ts:22"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "user enter the register email as \"sirsraksaa35@gmail.com\"",
+            "match": {
+              "location": "src\\test\\steps\\tutorialNinjaRegister.ts:26"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "user enter the telephone as \"9876543210\"",
+            "match": {
+              "location": "src\\test\\steps\\tutorialNinjaRegister.ts:30"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "user enter the register password as \"sriram123@\"",
+            "match": {
+              "location": "src\\test\\steps\\tutorialNinjaRegister.ts:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "user enter the confirm password as \"sriram123@\"",
+            "match": {
+              "location": "src\\test\\steps\\tutorialNinjaRegister.ts:38"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "user select the privacy policy checkbox",
+            "match": {
+              "location": "src\\test\\steps\\tutorialNinjaRegister.ts:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "user click the continue button",
+            "match": {
+              "location": "src\\test\\steps\\tutorialNinjaRegister.ts:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user should see the register success message \"Your Account Has Been Created!\"",
+            "match": {
+              "location": "src\\test\\steps\\tutorialNinjaRegister.ts:50"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5015929900,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\PLAYWITE-EXPLEO\\CUCUMBER\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "register",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "register",
+    "tags": [],
+    "uri": "src\\test\\features\\tutorialNinjaRegister.feature"
+  },
+  {
+    "description": "              Description: logging to the site",
+    "elements": [
+      {
+        "description": "",
+        "id": "logging-in-to-the-site;valid-login",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "valid login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2537807899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user is on the url",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:6"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5065812800,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\PLAYWITE-EXPLEO\\CUCUMBER\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user clicks on the myacc link",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "user clicks on the loginlink",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:19"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "user enters the valid email as \"sriramjhfawave12345@gmail.com\"",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "user enters password as \"sriram123@\"",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "user should be loggedin successfully",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:39"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5008001599,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\PLAYWITE-EXPLEO\\CUCUMBER\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 9
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "logging-in-to-the-site;invalid-login",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Invalid login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1946364799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "the user is on the url",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:6"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5024741100,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\PLAYWITE-EXPLEO\\CUCUMBER\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "user clicks on the myacc link",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:14"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "user clicks on the loginlink",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:19"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "user enters the valid email as \"sriramjhfawave12345@gmail.com\"",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "user enters password as \"1234567\"",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "user clicks on the login button",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:34"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "user should not be loggedin successfully",
+            "match": {
+              "location": "src\\test\\steps\\logintutorial.ts:45"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "failed",
+              "duration": 5017921200,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout.<anonymous> (D:\\PLAYWITE-EXPLEO\\CUCUMBER\\node_modules\\@cucumber\\cucumber\\src\\time.ts:50:14)\n    at listOnTimeout (node:internal/timers:605:17)\n    at processTimers (node:internal/timers:541:7)"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "logging-in-to-the-site",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "logging in to the site",
+    "tags": [],
+    "uri": "src\\test\\features\\tutorial.feature"
+  }
+]
