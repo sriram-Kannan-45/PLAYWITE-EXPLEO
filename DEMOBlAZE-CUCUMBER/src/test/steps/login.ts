@@ -1,4 +1,4 @@
-import { Given, When, Then } from "@cucumber/cucumber";
+import { Given, Then, When } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 
 Given("the user is on the automation exercise home page", async function () {
@@ -34,5 +34,5 @@ Then("user should see an invalid login error", async function () {
   await expect(
     this.page.locator(".login-form p")
   ).toHaveText("Your email or password is incorrect!");
-  await this.page.close();
+  
 });
